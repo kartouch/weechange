@@ -11,9 +11,7 @@ fifo_api=`find $HOME/.weechat -name weechat_fifo_*`
 
 function change_nick(){
     echo "irc.server.${server_name} */nick $1" > ${fifo_api}
-	echo "nick should be $1"
 	lastnick=$1
-	echo "lastnick is ${lastnick}"
 	}
 
 i=1
